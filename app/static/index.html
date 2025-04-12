@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIレシピ生成アプリ</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>AIレシピ生成アプリ</h1>
+        <div class="form-group">
+            <input type="text" id="ingredients" placeholder="材料を入力（例: 豚肉、玉ねぎ、人参）">
+        </div>
+        <button onclick="generateRecipe()" id="generateButton">レシピを生成</button>
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>レシピを生成中...</p>
+        </div>
+        <div id="recipe" class="recipe"></div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+
+</html>
