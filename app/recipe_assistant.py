@@ -8,7 +8,7 @@ class RecipeAssistant:
     def __init__(self):
         load_dotenv()
         genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-        self.model = genai.GenerativeModel(os.getenv("GOOGLE_MODEL_NAME"))
+        self.model = genai.GenerativeModel(os.getenv("AI_MODEL"))
 
     def _parse_section(self, text: str, section_name: str) -> str:
         pattern = f'【{section_name}】\s*(.*?)(?=【|$)'
